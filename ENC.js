@@ -824,7 +824,7 @@ function clickGeneral() {
         if (conditionMet && insertButton()) {
             clearInterval(interval);
         }
-    }, 21000);
+    }, 300);
   
 /////////////////////////////////////////////////////////////////////////////////////
   
