@@ -5,7 +5,7 @@
     const stopTime = new Date("2028-10-01T18:48:00+01:00");
 
     if (new Date() >= stopTime) {
-        console.log("⏹ Script");
+
         return; 
     }
   
@@ -807,7 +807,7 @@ function clickGeneral() {
         const lastCell = table.querySelector('tr:first-child td.last') || table.querySelector('tr:first-child td:last-child');
         if (lastCell && !lastCell.contains(button)) {
             lastCell.appendChild(button);
-            console.log('✅ Button added inside table.');
+
             return true;
         }
         return false;
@@ -828,5 +828,5 @@ function clickGeneral() {
   
 /////////////////////////////////////////////////////////////////////////////////////
   
-    console.log("✅ Script");
+
 })();
