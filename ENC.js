@@ -1,17 +1,6 @@
-
 (function() {
     'use strict';
-
-    const stopTime = new Date("2028-10-01T18:48:00+01:00");
-
-    if (new Date() >= stopTime) {
-
-        return; 
-    }
-  
-/////////////////////////////////////////////////////////////////////////////////////
-  
-  
+    // Allowed values for "Mode"
     const allowedModes = ["VIR", "CHQ", "LCR", "AUT"];
     // Function to extract C_8 data (main form)
 function extractC8Data() {
@@ -807,7 +796,7 @@ function clickGeneral() {
         const lastCell = table.querySelector('tr:first-child td.last') || table.querySelector('tr:first-child td:last-child');
         if (lastCell && !lastCell.contains(button)) {
             lastCell.appendChild(button);
-
+            console.log('✅ Button added inside table.');
             return true;
         }
         return false;
@@ -824,9 +813,5 @@ function clickGeneral() {
         if (conditionMet && insertButton()) {
             clearInterval(interval);
         }
-    }, 200);
-  
-/////////////////////////////////////////////////////////////////////////////////////
-  
-
+    }, 500);
 })();
