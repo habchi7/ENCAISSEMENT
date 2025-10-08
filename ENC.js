@@ -813,5 +813,5 @@ function clickGeneral() {
         if (conditionMet && insertButton()) {
             clearInterval(interval);
         }
-    }, 250);
+    }, 300);
 })();
